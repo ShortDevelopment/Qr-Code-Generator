@@ -40,20 +40,21 @@
                 <StackPanel>
                     <TextBlock Text="Preview" Style="{ThemeResource SubtitleTextBlockStyle}" Margin="18,10,16,0" />
                     <Border
-                    Width="300" Height="300" Margin="16"
-                    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-                    CornerRadius="8"
-                    BorderThickness="1"
-                    BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
+                        x:Name="PreviewBorder"
+                        Width="300" Height="300" Margin="16"
+                        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+                        CornerRadius="8"
+                        BorderThickness="1"
+                        BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
                         <Image x:Name="PreviewImage" />
                     </Border>
                     <CommandBar DefaultLabelPosition="Right" Width="300" Background="Transparent">
-                        <AppBarButton Label="Copy">
+                        <AppBarButton Label="Copy" x:Name="CopyButton" Click="CopyButton_Click">
                             <AppBarButton.Icon>
                                 <FontIcon Glyph="&#xe8c8;" />
                             </AppBarButton.Icon>
                         </AppBarButton>
-                        <AppBarButton Label="Save">
+                        <AppBarButton Label="Save" x:Name="SaveButton" Click="SaveButton_Click">
                             <AppBarButton.Icon>
                                 <FontIcon Glyph="&#xe74e;" />
                             </AppBarButton.Icon>
@@ -63,7 +64,7 @@
                 <TextBlock Grid.Row="1" Margin="10" HorizontalAlignment="Center">
                     Powered by <Hyperlink NavigateUri="https://github.com/codebude/QRCoder">QRCoder</Hyperlink>
                 </TextBlock>
-            </Grid>            
+            </Grid>
         </Border>
     </Grid>
 </Page>
