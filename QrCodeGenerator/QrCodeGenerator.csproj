@@ -126,6 +126,9 @@
     <Compile Include="Pages\ContentPage.xaml.cs">
       <DependentUpon>ContentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Content\WiFiContentPage.xaml.cs">
+      <DependentUpon>WiFiContentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Content\TextContentPage.xaml.cs">
       <DependentUpon>TextContentPage.xaml</DependentUpon>
     </Compile>
@@ -165,6 +168,10 @@
     <Page Include="Pages\ContentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Content\WiFiContentPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\Content\TextContentPage.xaml">
       <SubType>Designer</SubType>

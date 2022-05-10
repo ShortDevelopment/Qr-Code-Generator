@@ -10,8 +10,7 @@
 
     <StackPanel>
         <TextBox PlaceholderText="Url" x:Name="ContentTextBox"
-                 Margin="5"
-                 IsSpellCheckEnabled="True" />
+                 Margin="5" />
         <Button Content="Generate"
                 HorizontalAlignment="Stretch" Margin="5"
                 Click="Button_Click" />

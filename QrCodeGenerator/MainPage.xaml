@@ -25,27 +25,74 @@
                         <FontIcon Glyph="&#xe8e3;" />
                     </controls:NavigationViewItem.Icon>
                 </controls:NavigationViewItem>
+
+                <controls:NavigationViewItemSeparator />
+                <controls:NavigationViewItemHeader Content="Browser" />
                 <controls:NavigationViewItem Content="Website" Tag="url">
                     <controls:NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xe774;" />
                     </controls:NavigationViewItem.Icon>
                 </controls:NavigationViewItem>
-                
-                <controls:NavigationViewItemSeparator />
-                <controls:NavigationViewItemHeader Content="Social Media" />
-                <controls:NavigationViewItem Content="WhatsApp" IsEnabled="False">
+                <controls:NavigationViewItem Content="Bookmark" IsEnabled="False">
                     <controls:NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xe8bd;" />
+                        <FontIcon Glyph="&#xe8a4;" />
                     </controls:NavigationViewItem.Icon>
                 </controls:NavigationViewItem>
+
+                <controls:NavigationViewItemSeparator />
+                <controls:NavigationViewItemHeader Content="Authentication" />
+                <controls:NavigationViewItem Content="WiFi" Tag="wifi">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe701;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+
+                <controls:NavigationViewItemSeparator />
+                <controls:NavigationViewItemHeader Content="Organisation" />
+                <controls:NavigationViewItem Content="Phonenumber" IsEnabled="False">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xf715;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="Contact" IsEnabled="False">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe779;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="Calendar event" IsEnabled="False">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe787;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+
+                <controls:NavigationViewItemSeparator />
+                <controls:NavigationViewItemHeader Content="Maps" />
+                <controls:NavigationViewItem Content="Geolocation" IsEnabled="False">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe81d;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+
+                <controls:NavigationViewItemSeparator />
+                <controls:NavigationViewItemHeader Content="Message" />
                 <controls:NavigationViewItem Content="Sms" IsEnabled="False">
                     <controls:NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xe8bd;" />
                     </controls:NavigationViewItem.Icon>
                 </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="Mail" IsEnabled="False">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe715;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="WhatsApp" IsEnabled="False">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xe8f2;" />
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>                
                 <controls:NavigationViewItem Content="Skype" IsEnabled="False">
                     <controls:NavigationViewItem.Icon>
-                        <FontIcon Glyph="&#xe8bd;" />
+                        <FontIcon Glyph="&#xe8aa;" />
                     </controls:NavigationViewItem.Icon>
                 </controls:NavigationViewItem>
             </controls:NavigationView.MenuItems>

@@ -33,6 +33,9 @@ namespace QrCodeGenerator.Pages
                 case "url":
                     content = new UrlContentPage();
                     break;
+                case "wifi":
+                    content = new WiFiContentPage();
+                    break;
                 default:
                     content = new TextContentPage();
                     break;
