@@ -29,7 +29,7 @@
                                  DisplayModeChanged="NavigationViewControl_DisplayModeChanged" PaneOpened="NavigationViewControl_PaneOpened" PaneClosed="NavigationViewControl_PaneClosed">
             <controls:NavigationView.MenuItems>
                 <controls:NavigationViewItemHeader Content="Common" />
-                <controls:NavigationViewItem Content="Text" Tag="text">
+                <controls:NavigationViewItem Content="Text" Tag="text" IsSelected="True">
                     <controls:NavigationViewItem.Icon>
                         <FontIcon Glyph="&#xe8e3;" />
                     </controls:NavigationViewItem.Icon>
