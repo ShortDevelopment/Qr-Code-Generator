@@ -16,8 +16,17 @@
     </Page.Resources>
 
     <Grid>
+        <Border x:Name="AppTitleBar"
+                Grid.Column="1"
+                IsHitTestVisible="True"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                Height="{Binding ElementName=NavigationViewControl, Path=CompactPaneLength}"
+                Canvas.ZIndex="1">
+        </Border>
         <controls:NavigationView IsBackButtonVisible="Collapsed" PaneTitle="QR-Code Generator" IsTitleBarAutoPaddingEnabled="False"
-                                 SelectionChanged="NavigationView_SelectionChanged">
+                                 SelectionChanged="NavigationView_SelectionChanged" x:Name="NavigationViewControl"
+                                 DisplayModeChanged="NavigationViewControl_DisplayModeChanged" PaneOpened="NavigationViewControl_PaneOpened" PaneClosed="NavigationViewControl_PaneClosed">
             <controls:NavigationView.MenuItems>
                 <controls:NavigationViewItemHeader Content="Common" />
                 <controls:NavigationViewItem Content="Text" Tag="text">
