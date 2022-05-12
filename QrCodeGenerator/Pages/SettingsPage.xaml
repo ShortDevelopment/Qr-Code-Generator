@@ -12,8 +12,27 @@
                                 CornerRadius="8,0,0,0"
                                 BorderThickness="1,1,1,0"
                                 BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}">
-        <Grid>
-            
-        </Grid>
+        <ScrollViewer>
+            <StackPanel Padding="30,10,30,10">
+
+                <UserControl Height="20" />
+                <TextBlock Text="About this App" Style="{StaticResource SubtitleTextBlockStyle}"/>
+                <UserControl Height="15" />
+
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}">
+                QrCode Generator <Run Text="{x:Bind UI_VersionInfo.ToString()}" /> 
+                <LineBreak />
+                
+                © <Run Text="{x:Bind UI_CurrentYear}" /> <Hyperlink UnderlineStyle="None" NavigateUri="https://github.com/ShortDevelopment/">@ShortDevelopment</Hyperlink>
+                
+                <LineBreak />
+                <LineBreak />
+                
+                This app is open source!<LineBreak />
+                <Hyperlink UnderlineStyle="None" NavigateUri="https://github.com/ShortDevelopment/Qr-Code-Generator/">View on GitHub</Hyperlink>
+                </TextBlock>
+
+            </StackPanel>
+        </ScrollViewer>
     </Border>
 </Page>
